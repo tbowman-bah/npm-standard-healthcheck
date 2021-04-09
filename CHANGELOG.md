@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/julie-ng/standard-healthcheck/compare/v1.0.0...v1.0.1) (2021-04-09)
+
+
+### Bug Fixes
+
+* **uptime:** should count from server uptime ([5d1cf7c](https://github.com/julie-ng/standard-healthcheck/commit/5d1cf7ce8953f119bfe679085fc1e1d6b1ea44ba))
+
 ## [1.0.0](https://github.com/julie-ng/standard-healthcheck/compare/v0.1.0...v1.0.0) (2020-04-11)
 
 
