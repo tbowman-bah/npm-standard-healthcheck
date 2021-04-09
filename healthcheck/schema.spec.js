@@ -15,9 +15,23 @@ describe('schema', () => {
 			output = null
 		})
 
+		it('uptime increases over time', async () => {
+			// near immediate
+			output = schema()
+			expect(output.details.uptime.observed_value).toBeLessThan(100)
+			expect(output.details.uptime.observed_value).toBeGreaterThan(0)
+
+			// sleep 2 seconds
+			await new Promise((resolve, reject) => setTimeout(resolve, 2000))
+			output = schema()
+			expect(output.details.uptime.observed_value).toBeGreaterThan(2000)
+			expect(output.details.uptime.observed_value).toBeLessThan(2200)
+		})
+
 		// uptime properties always included
 		afterEach(() => {
 			expect(hasUptimeProps(output.details.uptime)).toBe(true)
+			expect(output.details.uptime.observed_unit).toEqual('ms')
 		})
 
 		describe('status', () => {

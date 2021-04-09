@@ -1,4 +1,5 @@
-module.exports = function (uptime) {
+module.exports = function (uptimeMs) {
+	const uptime = uptimeMs / 1000
 	const days = Math.floor(uptime / 60 / 60 / 24)
 	const hours = Math.floor(uptime / 60 / 60) - (days * 24)
 	const minutes = Math.floor(uptime / 60) - (hours * 60)

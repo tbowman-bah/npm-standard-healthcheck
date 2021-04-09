@@ -14,15 +14,17 @@ const schema = require('./schema')
  * @returns {function} endpoint with standard express.js interface: `function(req, res) {…}`
  */
 function healthcheck (opts = {}) {
-	const body = schema(opts)
-	const endpoint = function (req, res) {
+	return function (req, res) {
+		const body = schema({
+			status: opts.status || 'pass',
+			version: opts.version || 'unknown'
+		})
 		if (opts.includeEnv) {
 			body.details = body.details || {}
 			body.details.env = extractEnv(opts.includeEnv)
 		}
 		res.json(body)
 	}
-	return endpoint
 }
 
 module.exports = healthcheck
