@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/julie-ng/standard-healthcheck.svg?branch=master)](https://travis-ci.org/julie-ng/standard-healthcheck)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/d00bb74152c7914dccdd/test_coverage)](https://codeclimate.com/github/julie-ng/standard-healthcheck/test_coverage)
+[![codecov](https://codecov.io/gh/julie-ng/standard-healthcheck/branch/main/graph/badge.svg?token=A5PDSL9YJU)](https://codecov.io/gh/julie-ng/standard-healthcheck)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d00bb74152c7914dccdd/maintainability)](https://codeclimate.com/github/julie-ng/standard-healthcheck/maintainability)
 
 This tiny library exposes a health check endpoint in a **standard response format** per Internet Engineering Task Force (IETF). The proposed standard includes a few properties not included in standard extensions:
