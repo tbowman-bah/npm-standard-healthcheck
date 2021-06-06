@@ -1,6 +1,5 @@
 # standard-healthcheck
 
-[![Build Status](https://travis-ci.org/julie-ng/standard-healthcheck.svg?branch=master)](https://travis-ci.org/julie-ng/standard-healthcheck)
 [![CI](https://github.com/julie-ng/standard-healthcheck/actions/workflows/ci.yaml/badge.svg)](https://github.com/julie-ng/standard-healthcheck/actions/workflows/ci.yaml)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/d00bb74152c7914dccdd/test_coverage)](https://codeclimate.com/github/julie-ng/standard-healthcheck/test_coverage)
 [![codecov](https://codecov.io/gh/julie-ng/standard-healthcheck/branch/main/graph/badge.svg?token=A5PDSL9YJU)](https://codecov.io/gh/julie-ng/standard-healthcheck)
